@@ -2,8 +2,8 @@ require 'formula'
 
 class VagrantCompletion < Formula
   homepage 'https://github.com/kura/vagrant-bash-completion'
-  url 'https://github.com/kura/vagrant-bash-completion/archive/0.0.1.tar.gz'
-  sha1 '2e0f07511a62a915bd3c5853e82cda00a456610b'
+  url 'https://github.com/kura/vagrant-bash-completion/archive/0.0.3.tar.gz'
+  sha1 '47e4fdb29458f4f59294bf02a62472ea868ea745'
   head 'https://github.com/kura/vagrant-bash-completion.git'
 
   def install
