@@ -1,12 +1,13 @@
 require 'formula'
 
 class VagrantCompletion < Formula
-  homepage 'https://github.com/kura/vagrant-bash-completion'
-  url 'https://github.com/kura/vagrant-bash-completion/archive/0.0.5.tar.gz'
-  sha1 '9ff61905022f89d19ea6bc78d7f0bd50066ad351'
-  head 'https://github.com/kura/vagrant-bash-completion.git'
+  homepage "https://github.com/mitchellh/vagrant"
+  version "1.5.4"
+  url "https://raw.githubusercontent.com/mitchellh/vagrant/v1.5.4/contrib/bash/completion.sh"
+  sha1 "89b99a6895694cb5fa93e4fbb1e2c44a478e7d4f"
+  head "https://raw.githubusercontent.com/mitchellh/vagrant/master/contrib/bash/completion.sh"
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['vagrant']
+    bash_completion.install "completion.sh" => "vagrant"
   end
 end
