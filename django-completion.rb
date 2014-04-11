@@ -1,11 +1,13 @@
 require 'formula'
 
-class DjangoCompletion < GithubGistFormula
-  url 'https://gist.github.com/raw/4552835/47a0d6983b08b66081695d6a8683be280b05a61f/django_bash_completion'
-  homepage 'https://gist.github.com/4552835'
-  sha1 'c1b0eab397bfd09bbb197298fd0a7808d983b750'
+class DjangoCompletion < Formula
+  homepage "https://github.com/django/django"
+  version "1.6.4"
+  url "https://raw.githubusercontent.com/django/django/1.6.4/extras/django_bash_completion"
+  sha1 "57923f919d9f89ae4efe97f206f7c2cb3aaf2f8e"
+  head "https://raw.githubusercontent.com/django/django/master/extras/django_bash_completion"
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['*']
+    bash_completion.install "django_bash_completion" => "django"
   end
 end
