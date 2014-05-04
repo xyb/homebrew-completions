@@ -1,12 +1,11 @@
 require 'formula'
 
-class RailsCompletion < Formula
-  homepage 'https://github.com/jweslley/rails_completion'
-  url 'https://github.com/jweslley/rails_completion/archive/v0.3.0.tar.gz'
-  sha1 'e170614a559d3c49fcc90e925c7ff7122696382e'
-  head 'https://github.com/jweslley/rails_completion.git'
+class RailsCompletion < GithubGistFormula
+  url 'https://raw.githubusercontent.com/mernen/completion-ruby/790a467456851fb563a5bbd26628465febbec2cc/completion-rails'
+  homepage 'https://github.com/mernen/completion-ruby'
+  sha1 '18e1468c35c498931c169a9a04b26c37fd86eb6b'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['rails.bash']
+    (prefix+'etc/bash_completion.d').install Dir['*']
   end
 end
