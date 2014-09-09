@@ -1,4 +1,4 @@
-require 'formula'
+require "formula"
 
 class VagrantCompletion < Formula
   homepage "https://github.com/mitchellh/vagrant"

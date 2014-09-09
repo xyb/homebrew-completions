@@ -1,4 +1,4 @@
-require 'formula'
+require "formula"
 
 class DockerCompletion < Formula
   homepage "https://github.com/dotcloud/docker"
