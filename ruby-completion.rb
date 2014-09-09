@@ -6,6 +6,6 @@ class RubyCompletion < GithubGistFormula
   sha1 '25ec4eb61601f3e17286503e270ad44256938255'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['*']
+    bash_completion.install "completion-ruby" => "ruby"
   end
 end

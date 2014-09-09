@@ -7,6 +7,6 @@ class SpringCompletion < Formula
   head 'https://github.com/jacaetevha/spring_bash_completion.git'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['spring.bash']
+    bash_completion.install "spring.bash" => "spring"
   end
 end

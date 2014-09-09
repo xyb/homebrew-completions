@@ -6,6 +6,6 @@ class RakeCompletion < GithubGistFormula
   sha1 '1bcc846d9d5f0008a843d86470a8da836d16d6d8'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['*']
+    bash_completion.install "rake.sh" => "rake"
   end
 end

@@ -7,6 +7,6 @@ class AptlyCompletion < Formula
   head 'https://github.com/aptly/aptly-bash-completion.git'
 
   def install
-    (prefix+'etc/bash_completion.d').install 'aptly'
+    bash_completion.install "aptly"
   end
 end

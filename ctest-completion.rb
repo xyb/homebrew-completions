@@ -6,6 +6,6 @@ class CtestCompletion < GithubGistFormula
   sha1 '9062f6505bc53d1f5d98f7fd73fc2506f92d3efa'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['*']
+    bash_completion.install "ctest"
   end
 end

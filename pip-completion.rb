@@ -6,6 +6,6 @@ class PipCompletion < GithubGistFormula
   sha1 '995d32f1aee88c7424d67471e2c36c13fea0b0f8'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['*']
+    bash_completion.install "pip"
   end
 end

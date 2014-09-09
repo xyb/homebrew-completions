@@ -6,6 +6,6 @@ class BundlerCompletion < GithubGistFormula
   sha1 'edf3b701d388beb8065a369b5aa6673e272c880e'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['*']
+    bash_completion.install "completion-bundle" => "bundler"
   end
 end

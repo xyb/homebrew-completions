@@ -6,6 +6,6 @@ class RailsCompletion < GithubGistFormula
   sha1 '18e1468c35c498931c169a9a04b26c37fd86eb6b'
 
   def install
-    (prefix+'etc/bash_completion.d').install Dir['*']
+    bash_completion.install "completion-rails" => "rails"
   end
 end
