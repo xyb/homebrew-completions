@@ -1,5 +1,3 @@
-require "formula"
-
 class PackerCompletion < Formula
   homepage "https://github.com/mrolli/packer-bash-completion"
   url "https://raw.githubusercontent.com/mrolli/packer-bash-completion/2bd2d9da8bdcc7a763a0c551fa9ae8617dc5ecb7/packer"

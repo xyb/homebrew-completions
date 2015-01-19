@@ -1,5 +1,3 @@
-require "formula"
-
 class AptlyCompletion < Formula
   homepage "https://github.com/aptly-dev/aptly-bash-completion"
   url "https://github.com/aptly-dev/aptly-bash-completion/archive/0.1.tar.gz"

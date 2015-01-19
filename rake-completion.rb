@@ -1,5 +1,3 @@
-require "formula"
-
 class RakeCompletion < GithubGistFormula
   homepage "https://gist.github.com/turadg/840663"
   url "https://gist.github.com/turadg/840663/raw/46cceea5bc1f73098fcf5e099d91744b24dabdc7/rake.sh"

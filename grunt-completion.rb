@@ -1,5 +1,3 @@
-require "formula"
-
 class GruntCompletion < Formula
   homepage "http://gruntjs.com/"
   version "0.1.13"

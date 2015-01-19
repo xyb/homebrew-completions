@@ -1,5 +1,3 @@
-require "formula"
-
 class SpringCompletion < Formula
   homepage "https://github.com/jacaetevha/spring_bash_completion"
   url "https://github.com/jacaetevha/spring_bash_completion/archive/v0.0.1.tar.gz"

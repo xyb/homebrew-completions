@@ -1,5 +1,3 @@
-require "formula"
-
 class TmuxinatorCompletion < Formula
   homepage "https://github.com/tmuxinator/tmuxinator"
   head "https://raw.githubusercontent.com/tmuxinator/tmuxinator/master/completion/tmuxinator.bash"

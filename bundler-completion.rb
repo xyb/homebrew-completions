@@ -1,5 +1,3 @@
-require "formula"
-
 class BundlerCompletion < GithubGistFormula
   homepage "https://github.com/mernen/completion-ruby"
   url "https://raw.githubusercontent.com/mernen/completion-ruby/790a467456851fb563a5bbd26628465febbec2cc/completion-bundle"

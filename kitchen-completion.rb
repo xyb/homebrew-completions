@@ -1,5 +1,3 @@
-require "formula"
-
 class KitchenCompletion < Formula
   homepage "https://github.com/MarkBorcherding/test-kitchen-bash-completion"
   url "https://github.com/MarkBorcherding/test-kitchen-bash-completion/archive/v1.0.0.tar.gz"

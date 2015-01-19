@@ -1,5 +1,3 @@
-require "formula"
-
 class BoomCompletion < Formula
   homepage "http://zachholman.com/boom"
   version "0.4.0"

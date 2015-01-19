@@ -1,5 +1,3 @@
-require "formula"
-
 class PipCompletion < GithubGistFormula
   homepage "https://github.com/ekalinin/pip-bash-completion"
   url "https://raw.githubusercontent.com/ekalinin/pip-bash-completion/3fe4cfdcd9cc78e2f88e3c8f5ca1184820014862/pip"

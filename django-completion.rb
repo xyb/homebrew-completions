@@ -1,5 +1,3 @@
-require "formula"
-
 class DjangoCompletion < Formula
   homepage "https://github.com/django/django"
   version "1.6.4"

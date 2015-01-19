@@ -1,5 +1,3 @@
-require "formula"
-
 class WpcliCompletion < Formula
   homepage "https://github.com/wp-cli/wp-cli"
   version "0.16.0"

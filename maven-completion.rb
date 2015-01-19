@@ -1,5 +1,3 @@
-require "formula"
-
 class MavenCompletion < Formula
   homepage "https://github.com/juven/maven-bash-completion"
   url "https://raw.githubusercontent.com/juven/maven-bash-completion/b22f363651e7a474a2e7e1fa4d7ddfaec64076c0/bash_completion.bash"

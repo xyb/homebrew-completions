@@ -1,5 +1,3 @@
-require "formula"
-
 class CargoCompletion < Formula
   homepage "https://github.com/roshan/rust-bash-completion"
   url "https://raw.githubusercontent.com/roshan/rust-bash-completion/0.12.1/etc/bash_completion.d/cargo"

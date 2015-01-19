@@ -1,5 +1,3 @@
-require "formula"
-
 class DockerCompletion < Formula
   homepage "https://github.com/docker/docker"
   version "1.3.1"

@@ -1,5 +1,3 @@
-require "formula"
-
 class CtestCompletion < GithubGistFormula
   homepage "https://gist.github.com/peterfpeterson/7929954"
   url "https://gist.github.com/peterfpeterson/7929954/raw/f63ddaf0c631bde871e4ac3384654c1ab095ea9a/ctest"
