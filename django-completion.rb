@@ -1,8 +1,8 @@
 class DjangoCompletion < Formula
   homepage "https://github.com/django/django"
-  version "1.6.4"
-  url "https://raw.githubusercontent.com/django/django/1.6.4/extras/django_bash_completion"
-  sha256 "88cada5376f70e415107aee37742e61c5078da6eaead3a982528b90c13e3e369"
+  version "1.8.3"
+  url "https://raw.githubusercontent.com/django/django/1.8.3/extras/django_bash_completion"
+  sha256 "34918c9a9c85b8f98b965937967b34faee9403f2fb88f4dc0229c58e55ac57d0"
   head "https://raw.githubusercontent.com/django/django/master/extras/django_bash_completion"
 
   def install
