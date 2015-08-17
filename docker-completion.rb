@@ -1,8 +1,8 @@
 class DockerCompletion < Formula
   homepage "https://github.com/docker/docker"
-  version "1.5.0"
-  url "https://raw.githubusercontent.com/docker/docker/v1.5.0/contrib/completion/bash/docker"
-  sha256 "01ce940d0af0b9f96cccf19251b34e1df3d810a9949e6adbc9beadd2c359ac3b"
+  version "1.8.1"
+  url "https://raw.githubusercontent.com/docker/docker/v1.8.1/contrib/completion/bash/docker"
+  sha256 "6a28e700bd25662a7c16d696cbd5766e17d6be00a620058da8e6bff428b34423"
   head "https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker"
 
   def install
