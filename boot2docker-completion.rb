@@ -7,4 +7,9 @@ class Boot2dockerCompletion < Formula
   def install
     bash_completion.install "boot2docker-completion.bash"
   end
+
+  test do
+    assert_match "-F _boot2docker",
+      shell_output("source #{bash_completion}/boot2docker-completion.bash && complete -p boot2docker")
+  end
 end
