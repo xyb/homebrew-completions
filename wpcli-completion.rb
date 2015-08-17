@@ -1,8 +1,8 @@
 class WpcliCompletion < Formula
   homepage "https://github.com/wp-cli/wp-cli"
-  url "https://raw.githubusercontent.com/wp-cli/wp-cli/v0.18.0/utils/wp-completion.bash"
+  url "https://raw.githubusercontent.com/wp-cli/wp-cli/v0.19.2/utils/wp-completion.bash"
   sha256 "e67edfcd9cd9a75d09d840c612d8af5f39655ccfef45b6d6f84784a8106cefad"
-  version "0.18.0"
+  version "0.19.2"
 
   head "https://raw.githubusercontent.com/wp-cli/wp-cli/master/utils/wp-completion.bash"
 
