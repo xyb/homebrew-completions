@@ -1,7 +1,7 @@
 class BundlerCompletion < Formula
   homepage "https://github.com/mernen/completion-ruby"
   url "https://raw.githubusercontent.com/mernen/completion-ruby/790a467456851fb563a5bbd26628465febbec2cc/completion-bundle"
-  sha1 "edf3b701d388beb8065a369b5aa6673e272c880e"
+  sha256 "7fdb2ee803efb924e69d726deab1c1c5de933087d6803ac0775cd2c957df8182"
   version "1"
 
   def install

@@ -1,7 +1,7 @@
 class SpringCompletion < Formula
   homepage "https://github.com/jacaetevha/spring_bash_completion"
   url "https://github.com/jacaetevha/spring_bash_completion/archive/v0.0.1.tar.gz"
-  sha1 "d6fafd061a24d0ccb549984cb081d2eea8293ec3"
+  sha256 "a97b256dbdaca894dfa22bd96a6705ebf4f94fa8206d05f41927f062c3dd60bf"
   head "https://github.com/jacaetevha/spring_bash_completion.git"
 
   def install
