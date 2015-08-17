@@ -7,4 +7,9 @@ class AptlyCompletion < Formula
   def install
     bash_completion.install "aptly"
   end
+
+  test do
+    assert_match "-F _aptly",
+      shell_output("source #{bash_completion}/aptly && complete -p aptly")
+  end
 end
