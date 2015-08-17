@@ -1,7 +1,7 @@
 class AptlyCompletion < Formula
   homepage "https://github.com/aptly-dev/aptly-bash-completion"
-  url "https://github.com/aptly-dev/aptly-bash-completion/archive/0.1.tar.gz"
-  sha256 "90599bef08f274d20160cc2a9cf3e3abc92807298516953aa4ad94145aa97702"
+  url "https://github.com/aptly-dev/aptly-bash-completion/archive/0.9.5.tar.gz"
+  sha256 "3b912787808e86ddd7c30555d2b09951e564956dddfe8b521f104651cfe7da96"
   head "https://github.com/aptly/aptly-bash-completion.git"
 
   def install
