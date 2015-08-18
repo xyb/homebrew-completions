@@ -1,11 +1,15 @@
 class DjangoCompletion < Formula
   homepage "https://github.com/django/django"
-  version "1.8.3"
-  url "https://raw.githubusercontent.com/django/django/1.8.3/extras/django_bash_completion"
-  sha256 "34918c9a9c85b8f98b965937967b34faee9403f2fb88f4dc0229c58e55ac57d0"
-  head "https://raw.githubusercontent.com/django/django/master/extras/django_bash_completion"
+  url "https://github.com/django/django/archive/1.8.3.tar.gz"
+  sha256 "e299627a5dbc5ef107b47bb9f4e27387d305f30e3ad71e2013c4d2525ae23188"
+  head "https://github.com/django/django.git"
 
   def install
-    bash_completion.install "django_bash_completion" => "django"
+    bash_completion.install "extras/django_bash_completion" => "django"
+  end
+
+  test do
+    assert_match "-F _django_completion",
+      shell_output("source #{bash_completion}/django && complete -p django-admin.py")
   end
 end
