@@ -1,11 +1,17 @@
 class DockerCompletion < Formula
   homepage "https://github.com/docker/docker"
-  version "1.8.1"
-  url "https://raw.githubusercontent.com/docker/docker/v1.8.1/contrib/completion/bash/docker"
-  sha256 "6a28e700bd25662a7c16d696cbd5766e17d6be00a620058da8e6bff428b34423"
-  head "https://raw.githubusercontent.com/docker/docker/master/contrib/completion/bash/docker"
+  url "https://github.com/docker/docker/archive/v1.8.1.tar.gz"
+  sha256 "7f22e88a994dc1bc143f87215de01ccd902450e6e8d747467d042a56db792b03"
+  head "https://github.com/docker/docker"
 
   def install
-    bash_completion.install "docker"
+    bash_completion.install "contrib/completion/bash/docker"
+    fish_completion.install "contrib/completion/fish/docker.fish"
+    zsh_completion.install "contrib/completion/zsh/_docker"
+  end
+
+  test do
+    assert_match "-F _docker",
+      shell_output("source #{bash_completion}/docker && complete -p docker")
   end
 end
