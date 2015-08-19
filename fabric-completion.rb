@@ -1,8 +1,8 @@
 class FabricCompletion < Formula
   homepage "https://github.com/kbakulin/fabric-completion"
-  url "https://raw.githubusercontent.com/kbakulin/fabric-completion/5b5910492046e6335af0e88550176d2583d9a510/fabric-completion.bash"
-  sha256 "9346541b636f001d4efe1ee0bf0a7a083e85789c88ebd54910004b39ee3f68fa"
-  head "https://raw.githubusercontent.com/kbakulin/fabric-completion/master/fabric-completion.bash"
+  url "https://github.com/kbakulin/fabric-completion.git",
+    :revision => "5b5910492046e6335af0e88550176d2583d9a510"
+  head "https://raw.githubusercontent.com/kbakulin/fabric-completion.git"
   version "1"
 
   def install
@@ -15,5 +15,10 @@ class FabricCompletion < Formula
 
       For more details and configuration refer to the home page.
     EOS
+  end
+
+  test do
+    assert_match "-F __fab_completion",
+      shell_output("source #{bash_completion}/fabric && complete -p fab")
   end
 end
