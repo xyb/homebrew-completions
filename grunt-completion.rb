@@ -1,11 +1,16 @@
 class GruntCompletion < Formula
   homepage "http://gruntjs.com/"
-  version "0.1.13"
-  url "https://raw.githubusercontent.com/gruntjs/grunt-cli/v0.1.13/completion/bash"
-  sha256 "65f2db896d3ef60d178e3a3fdedab0ff76c2e2dac707a18ab42cc92a7f894080"
-  head "https://raw.githubusercontent.com/gruntjs/grunt-cli/master/completion/bash"
+  url "https://github.com/gruntjs/grunt-cli/archive/v0.1.13.tar.gz"
+  sha256 "bb291c97f5ac5dc3f549343436f64ff066a0138565e15c794b1636d37fdc4992"
+  head "https://github.com/gruntjs/grunt-cli.git"
 
   def install
-    bash_completion.install "bash" => "grunt"
+    bash_completion.install "completion/bash" => "grunt"
+    zsh_completion.install "completion/zsh" => "_grunt"
+  end
+
+  test do
+    assert_match "-F _grunt_completions",
+      shell_output("source #{bash_completion}/grunt && complete -p grunt")
   end
 end
