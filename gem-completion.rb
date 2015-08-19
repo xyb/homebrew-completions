@@ -1,10 +1,17 @@
 class GemCompletion < Formula
   homepage "https://github.com/mernen/completion-ruby"
-  url "https://raw.githubusercontent.com/mernen/completion-ruby/790a467456851fb563a5bbd26628465febbec2cc/completion-gem"
-  sha256 "2130b6f8518349bc5e0d0ff567e05500256a701e344713650e80d411ef0563af"
-  version "1"
+  url "https://github.com/mernen/completion-ruby.git",
+    :revision => "f3e4345042b0cc48317e45b673dfd3d23904b9a7"
+  version "2"
+
+  head "https://github.com/mernen/completion-ruby.git"
 
   def install
     bash_completion.install "completion-gem" => "gem"
+  end
+
+  test do
+    assert_match "-F __gem",
+      shell_output("source #{bash_completion}/gem && complete -p gem")
   end
 end
