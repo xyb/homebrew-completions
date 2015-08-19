@@ -1,10 +1,17 @@
 class RailsCompletion < Formula
   homepage "https://github.com/mernen/completion-ruby"
-  url "https://raw.githubusercontent.com/mernen/completion-ruby/790a467456851fb563a5bbd26628465febbec2cc/completion-rails"
-  sha256 "1aa4a5e52a616adc81db12b264865d8fa028202e2c09c0fc3af7026045f7d474"
-  version "1"
+  url "https://github.com/mernen/completion-ruby.git",
+    :revision => "f3e4345042b0cc48317e45b673dfd3d23904b9a7"
+  version "2"
+
+  head "https://github.com/mernen/completion-ruby.git"
 
   def install
     bash_completion.install "completion-rails" => "rails"
+  end
+
+  test do
+    assert_match "-F __rails",
+      shell_output("source #{bash_completion}/rails && complete -p rails")
   end
 end
