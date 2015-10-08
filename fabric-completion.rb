@@ -1,9 +1,10 @@
 class FabricCompletion < Formula
+  desc "Bash completion for Fabric"
   homepage "https://github.com/kbakulin/fabric-completion"
   url "https://github.com/kbakulin/fabric-completion.git",
     :revision => "5b5910492046e6335af0e88550176d2583d9a510"
-  head "https://raw.githubusercontent.com/kbakulin/fabric-completion.git"
   version "1"
+  head "https://raw.githubusercontent.com/kbakulin/fabric-completion.git"
 
   def install
     bash_completion.install "fabric-completion.bash" => "fabric"

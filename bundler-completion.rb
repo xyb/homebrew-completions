@@ -1,4 +1,5 @@
 class BundlerCompletion < Formula
+  desc "Bash completion for Bundler"
   homepage "https://github.com/mernen/completion-ruby"
   url "https://github.com/mernen/completion-ruby.git",
     :revision => "f3e4345042b0cc48317e45b673dfd3d23904b9a7"

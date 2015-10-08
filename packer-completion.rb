@@ -1,4 +1,5 @@
 class PackerCompletion < Formula
+  desc "Bash completion for Packer"
   homepage "https://github.com/mrolli/packer-bash-completion"
   url "https://github.com/mrolli/packer-bash-completion.git",
     :revision => "2bd2d9da8bdcc7a763a0c551fa9ae8617dc5ecb7"
