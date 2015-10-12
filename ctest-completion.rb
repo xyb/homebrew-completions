@@ -8,4 +8,9 @@ class CtestCompletion < Formula
   def install
     bash_completion.install "ctest"
   end
+
+  test do
+    assert_match "-F _ctest",
+      shell_output("bash -c 'source #{bash_completion}/ctest && complete -p ctest'")
+  end
 end
