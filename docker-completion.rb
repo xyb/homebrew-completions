@@ -5,6 +5,9 @@ class DockerCompletion < Formula
   sha256 "7f22e88a994dc1bc143f87215de01ccd902450e6e8d747467d042a56db792b03"
   head "https://github.com/docker/docker"
 
+  conflicts_with "docker",
+    :because => "docker already includes these completion scripts"
+
   def install
     bash_completion.install "contrib/completion/bash/docker"
     fish_completion.install "contrib/completion/fish/docker.fish"
