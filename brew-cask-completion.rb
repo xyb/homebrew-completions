@@ -1,12 +1,13 @@
 class BrewCaskCompletion < Formula
-  desc "Bash completion for brew-cask"
+  desc "Bash and Fish completion for brew-cask"
   homepage "https://github.com/xyb/homebrew-cask-completion"
-  url "https://github.com/xyb/homebrew-cask-completion/archive/v1.0.tar.gz"
-  sha256 "0d0a6cdd609bac1cd8efe1b834db605fbbaa4d45a8c6fc5631f85a05c53f8617"
+  url "https://github.com/xyb/homebrew-cask-completion/archive/v2.1.tar.gz"
+  sha256 "27c7ea3b7f7c060f5b5676a419220c4ce6ebf384237e859a61c346f61c8f7a1b"
   head "https://github.com/xyb/homebrew-cask-completion.git"
 
   def install
     bash_completion.install "homebrew-cask-completion.bash" => "brew-cask"
+    fish_completion.install "brew-cask.fish"
   end
 
   test do
